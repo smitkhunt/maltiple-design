@@ -1,0 +1,58 @@
+# Shapes
+# design by smitkhunt
+
+
+from turtle import  *
+import turtle
+import time
+t = turtle.Turtle()
+
+
+#star
+#t.speed(6)
+t.color("black", "yellow")
+t.begin_fill()
+for i in range(8):
+    t.forward(200)
+    t.left(135)
+t.end_fill()
+time.sleep(1)
+t.clear()
+
+
+#square
+t.color("green", "gray")
+t.begin_fill()
+for i in range(4):
+    t.forward(200)
+    t.right(90)
+t.end_fill()
+time.sleep(1)
+t.clear()
+##################
+t.color("black", "red")
+t.begin_fill()
+for i in range(7):
+    t.left(50)
+    t.forward(100)
+    t.circle(40, 180)
+    t.left(260)
+    t.circle(40, 180)
+    t.forward(100)
+    t.forward(10)
+
+t.end_fill()
+time.sleep(1)
+t.clear()
+
+
+# double square
+t.color("pink", "green")
+t.begin_fill()
+for i in range(4):
+    t.forward(90)
+    t.right(90)
+t.penup()
+t.forward(150)
+t.pendown()
+
